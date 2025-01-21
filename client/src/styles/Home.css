@@ -1,0 +1,53 @@
+.home-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px auto; /* Ajusta margen superior */
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px; /* Espaciado consistente */
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column; /* Cambiar para móviles */
+  align-items: center;
+  gap: 15px; /* Ajusta la separación entre botones */
+}
+
+.home-buttons .button {
+  padding: 12px 25px; /* Tamaño uniforme */
+  width: 80%; /* Botones más uniformes y responsivos */
+  max-width: 300px; /* Límite de ancho */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-buttons .button:hover {
+  background-color: #2980b9;
+}
+
+.home-buttons .button:focus {
+  outline: none;
+  box-shadow: 0 0 8px #2980b9;
+}

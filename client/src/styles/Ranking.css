@@ -1,0 +1,33 @@
+.ranking-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ranking-table th,
+  .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .ranking-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .ranking-table tr:hover {
+    background-color: #ddd;
+  }
+  

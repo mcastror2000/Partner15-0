@@ -1,0 +1,164 @@
+/* Contenedor principal */
+.manage-championships-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título principal */
+  .manage-championships-container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtítulos */
+  .manage-championships-container h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Formularios */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  /* Mensajes de información */
+  .info-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-container p {
+    margin: 5px 0;
+    color: #2c3e50;
+    font-size: 1rem;
+  }
+  
+  /* Botones */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Botón para programar campeonato */
+  .btn-submit {
+    background-color: #007bff;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Botón para volver al panel de administración */
+  .btn-dashboard {
+    background-color: #28a745;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Botón para volver a la página de inicio */
+  .btn-home {
+    background-color: #17a2b8;
+  }
+  
+  .btn-home:hover {
+    background-color: #117a8b;
+  }
+  
+  /* Botón para editar */
+  .btn-edit {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Botón para eliminar */
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Lista de campeonatos */
+  .championship-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .championship-list li {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .championship-list p {
+    margin: 5px 0;
+    color: #34495e;
+  }
+  
+  .championship-list p strong {
+    color: #2c3e50;
+  }
+  
+  /* Botones en la lista */
+  .championship-list .btn-edit,
+  .championship-list .btn-delete {
+    display: inline-block;
+    width: auto;
+    margin: 5px 5px 0 0;
+  }
+  
