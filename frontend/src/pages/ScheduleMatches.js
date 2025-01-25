@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { collection, getDocs, addDoc, query, where } from "firebase/firestore";
 import db from "../firebase";
 import Header from "../components/Header";
@@ -11,6 +11,26 @@ const ScheduleMatches = () => {
   const [players, setPlayers] = useState([]);
   const [existingMatches, setExistingMatches] = useState([]);
   const [currentRound, setCurrentRound] = useState(1);
+
+  // Función para cargar partidos y fechas (useCallback para evitar dependencias circulares)
+  const fetchMatchesAndDates = useCallback(async () => {
+    try {
+      const matchesQuery = query(
+        collection(db, "Partidos"),
+        where("ID_Campeonato", "==", selectedChampionship)
+      );
+      const snapshot = await getDocs(matchesQuery);
+      const fetchedMatches = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setExistingMatches(fetchedMatches);
+
+      determineCurrentRound(fetchedMatches);
+    } catch (error) {
+      console.error("Error al cargar partidos:", error);
+    }
+  }, [selectedChampionship]);
 
   // Cargar campeonatos
   useEffect(() => {
@@ -45,7 +65,7 @@ const ScheduleMatches = () => {
     fetchPlayers();
   }, []);
 
-  // Cargar partidos y calcular la ronda actual
+  // Cargar partidos cuando se selecciona un campeonato
   useEffect(() => {
     if (selectedChampionship) {
       fetchMatchesAndDates();
@@ -53,26 +73,7 @@ const ScheduleMatches = () => {
       setExistingMatches([]);
       setCurrentRound(1);
     }
-  }, [selectedChampionship]);
-
-  const fetchMatchesAndDates = async () => {
-    try {
-      const matchesQuery = query(
-        collection(db, "Partidos"),
-        where("ID_Campeonato", "==", selectedChampionship)
-      );
-      const snapshot = await getDocs(matchesQuery);
-      const fetchedMatches = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setExistingMatches(fetchedMatches);
-
-      determineCurrentRound(fetchedMatches);
-    } catch (error) {
-      console.error("Error al cargar partidos:", error);
-    }
-  };
+  }, [selectedChampionship, fetchMatchesAndDates]);
 
   const determineCurrentRound = (matches) => {
     const rounds = matches.reduce((acc, match) => {
