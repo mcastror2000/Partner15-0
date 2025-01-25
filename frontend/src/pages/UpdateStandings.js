@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { collection, getDocs, updateDoc, setDoc, doc } from "firebase/firestore";
+import { collection, getDocs, setDoc, doc } from "firebase/firestore";
 import db from "../firebase";
 import Header from "../components/Header"; // Header común
 import Button from "../components/Button"; // Botones reutilizables
