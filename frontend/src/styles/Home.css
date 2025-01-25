@@ -1,0 +1,57 @@
+.home-container {
+  text-align: center; /* Centra todo el contenido */
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px; /* Limita el ancho máximo del contenedor */
+}
+
+.home-header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px; /* Espaciado debajo de la imagen */
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column; /* Botones apilados en columnas */
+  align-items: center;
+}
+
+/* Media queries para dispositivos */
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del texto */
+  }
+
+  .home-header p {
+    font-size: 1rem; /* Texto más pequeño */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header img {
+    width: 80px; /* Imagen más pequeña */
+  }
+
+  .home-header h1 {
+    font-size: 1.5rem; /* Reduce  más el tamaño del texto */
+  }
+
+  .home-header p {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+
+  .home-buttons {
+    width: 100%; /* Los botones ocupan todo el ancho */
+  }
+}

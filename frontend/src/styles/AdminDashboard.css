@@ -1,0 +1,43 @@
+/* Contenedor principal */
+.admin-dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(120deg, #f0f4f8, #d9e9f9); /* Fondo con gradiente */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Títulos */
+.admin-dashboard-container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-container p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+/* Opciones del administrador */
+.admin-options {
+  display: flex;
+  flex-direction: column; /* Botones alineados hacia abajo */
+  align-items: center; /* Centrar los botones horizontalmente */
+  gap: 15px; /* Espaciado entre botones */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .admin-dashboard-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .admin-options {
+    gap: 10px; /* Reduce el espacio entre botones en pantallas pequeñas */
+  }
+}

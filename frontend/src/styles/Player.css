@@ -1,0 +1,64 @@
+/* Contenedor principal */
+.player-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 25px;
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra */
+}
+
+/* Títulos */
+.player-container h1 {
+  font-size: 2.2rem; /* Tamaño de letra ligeramente aumentado */
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Información del jugador */
+.player-info {
+  margin: 20px auto;
+  padding: 25px; /* Espaciado mayor */
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.player-info p {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Tamaño de letra aumentado */
+  color: #2c3e50;
+}
+
+.player-info strong {
+  font-weight: bold;
+  font-size: 1.3rem; /* Resaltar los elementos importantes */
+}
+
+/* Botones genéricos (se ajustan en Button.css) */
+button.primary-button {
+  width: 100%; /* Ocupa todo el ancho */
+  margin: 10px 0;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .player-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .player-info {
+    padding: 20px;
+  }
+
+  .player-info p {
+    font-size: 1.1rem; /* Tamaño ligeramente reducido para pantallas pequeñas */
+  }
+
+  .player-info strong {
+    font-size: 1.2rem; /* Ajustar tamaño para pantallas pequeñas */
+  }
+}

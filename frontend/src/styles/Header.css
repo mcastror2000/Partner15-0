@@ -1,0 +1,36 @@
+.header-container {
+    text-align: center; /* Centra el contenido */
+    padding: 10px;
+  }
+  
+  .header-image {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px auto; /* Centra la imagen y añade espacio inferior */
+  }
+  
+  .header-container h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header-image {
+      width: 80px; /* Imagen más pequeña */
+    }
+  
+    .header-container h1 {
+      font-size: 1.5rem; /* Ajusta el tamaño del texto */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-image {
+      width: 60px; /* más pequeña */
+    }
+  
+    .header-container h1 {
+      font-size: 1.2rem; /* Texto más pequeño */
+    }
+  }
+  

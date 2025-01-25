@@ -1,0 +1,144 @@
+/* Contenedor principal */
+.ranking-container {
+  max-width: 90%; /* Usar porcentaje para mayor flexibilidad */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.ranking-container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grupo de formularios */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de tabla */
+.table-wrapper {
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  margin-top: 20px;
+}
+
+/* Tabla de ranking */
+.ranking-table {
+  width: 100%; /* Usar el ancho completo del contenedor */
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 1%; /* Usar porcentaje para un diseño fluido */
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.ranking-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.ranking-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%; /* Espaciado entre botones */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permitir que los botones se ajusten en pantallas pequeñas */
+}
+
+/* Botón genérico */
+button {
+  padding: 1% 5%; /* Usar porcentajes para que se ajusten mejor */
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Pequeña animación al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .ranking-container {
+    padding: 15px;
+  }
+
+  .ranking-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ranking-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group select {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

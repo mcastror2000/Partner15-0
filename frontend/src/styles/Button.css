@@ -1,0 +1,56 @@
+/* Botón por defecto */
+.default-button {
+  background-color: #007bff; /* Azul brillante */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.default-button:hover {
+  background-color: #0056b3;
+}
+
+/* Botón secundario */
+.secondary-button {
+  background-color: #6c757d; /* Gris */
+}
+
+.secondary-button:hover {
+  background-color: #5a6268;
+}
+
+/* Botón de peligro */
+.danger-button {
+  background-color: #dc3545; /* Rojo */
+}
+
+.danger-button:hover {
+  background-color: #c82333;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .default-button,
+  .secondary-button,
+  .danger-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .default-button,
+  .secondary-button,
+  .danger-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

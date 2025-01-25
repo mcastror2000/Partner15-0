@@ -1,0 +1,129 @@
+/* Contenedor principal */
+.update-standings-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título principal */
+  .update-standings-container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Botones (usando estilos existentes sin cambios de color) */
+  .primary-button,
+  .secondary-button {
+    display: inline-block;
+    width: 100%; /* Ancho completo para pantallas pequeñas */
+    max-width: 200px; /* Ancho máximo en pantallas más grandes */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    transition: transform 0.2s ease;
+  }
+  
+  .primary-button:hover,
+  .secondary-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Tabla de ranking */
+  .ranking-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .ranking-table th,
+  .ranking-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .ranking-table th {
+    background-color: #007bff; /* Mantener consistencia con botones */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .ranking-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Mensajes de error */
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de botones de navegación */
+  .navigation-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Ajuste flexible en filas */
+    justify-content: center;
+    gap: 15px; /* Espaciado entre botones */
+    margin-top: 20px;
+  }
+  
+  /* Media queries para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .update-standings-container {
+      padding: 15px;
+    }
+  
+    .update-standings-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .ranking-table th,
+    .ranking-table td {
+      font-size: 0.9rem; /* Reducir tamaño de fuente */
+      padding: 8px;
+    }
+  
+    .primary-button,
+    .secondary-button {
+      font-size: 0.9rem; /* Reducir tamaño de texto */
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .update-standings-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .ranking-table th,
+    .ranking-table td {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  
+    .primary-button,
+    .secondary-button {
+      width: 90%; /* Botones más anchos en pantallas pequeñas */
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  }
+  
